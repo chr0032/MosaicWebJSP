@@ -33,7 +33,7 @@
    - 개발자 1(master)의 변경사항 저장
       - >> git add .
       - >> git status
-      - >> git git push
+      - >> git push
    - 개발자 2가 변경사항 받아오기
       - >> git pull
       
