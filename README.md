@@ -109,4 +109,24 @@
    - notepad src/test/java/com/hybrid/mapper/DeptMapperTest.java
    - notepad src/main/webapp/dept.jsp
    
+8. Deploy 방법 
+   - gradle war
+   - D:\03_Src\jsp\MosaicWeb\build\libs
+   - cp MosaicWeb.war C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps
+   - Firefox ==> http://localhost/MosaicWeb/index.html
+
+9. Gluon 설정
+   - cp FXTemplate/src/* MosaicWeb/src
+   - merge FXTemplate/build.gradle MosaicWeb/build.gradle (3군데 /application, main 클래스 추가/ repositories 추가 / dependencies 	추가 )
+   - merge ((com.hybrid.fx.MainApplication=com.hybrid.MosaicWebApplication)합칩)	
+		- >> spring boot + gluon start
+		- >> spring boot + gluon stop
+		- >> primaryView에 WebView 추가
+		 
+	   
+   
+      
+   
+   
+   
    
