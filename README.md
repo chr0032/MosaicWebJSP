@@ -1,4 +1,11 @@
 
+* 처음 켰을때 git status 해서 clean이 안되면 (MosaicWeb에서)
+1. git add *
+2. git commit -m "수정 내용"
+3. git push
+4. dev에서 git pull
+
+
 1. Spring Starter Project 생성
 
    - Name : MosaicWeb
