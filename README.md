@@ -9,6 +9,7 @@
    - Package : com.hybrid
    
    - Dependencies 선택 : Web - Web
+
 2. 형상관리
 
    - Remote Repository 생성 (github)
@@ -21,19 +22,19 @@
       - >> git add *
       - >> git commit -m "first commit" 
    - Local ====push===> Remote (최초 동기화)
-      - >> git remote add origin https://github.com/Denma/MosaicWeb.git
+      - >> git remote add origin https://github.com/chr0032/MosaicWeb.git
       - >> git remote -v
       - >> git remote remove origin (remote제거)
-      - >> git remote add origin https://github.com/Denma/MosaicWeb.git
-      - >> git push -u origin master
+      - >> git remote add origin https://github.com/chr0032/MosaicWeb.git
+      - >> git push -u origin master (처음 할때만 그 이후는 git push)
    - 개발자 2가 Clone 수행
-      - >> git clone https://github.com/Denma/MosaicWeb.git
-      - >> git clone https://github.com/Denma/MosaicWeb.git MosaicWebDev (MasaicWebDev폴더 생성 후 Clone)
-      - >> Eclipse Gradle Import      
+      - >> git clone https://github.com/chr0032/MosaicWeb.git (D:\03_Src\jsp\MosaicWeb 에서)
+      - >> git clone https://github.com/chr0032/MosaicWeb.git MosaicWebDev (D:\03_Src\jsp 에서 실행하면 MosaicWebDev 파일도 생성 클론도 됨)
+      - >> Eclipse Gradle Import (이클립스 상에서 폴더 확인 가능)     
    - 개발자 1(master)의 변경사항 저장
       - >> git add .
       - >> git status
-      - >> git git push
+      - >> git push
    - 개발자 2가 변경사항 받아오기
       - >> git pull
       
