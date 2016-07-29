@@ -85,5 +85,24 @@
    - 개발자2는 Project -> Properties 에서 두가지 변경이 필요함
    - 1. Project Facets-> 
    
+  7. Mybatis 설정
+  
+   - mvnrepository.com >> search : spring boot mybatis
+   - build.gradle에 Dependency 설정
+ 
+		- compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', 
+		  version: '1.1.1'
+		- compile files('src/main/webapp/WEB-INF/lib/ojdbc7.jar');
+
+   - application.properties
    
+   		- >> spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+		- >> spring.datasource.url=jdbc:oracle:thin:@52.78.14.61:1521:orcl
+		- >> spring.datasource.username=scott
+		- >> spring.datasource.password=tiger
+   		
+   - Eclipse Gradle Reflesh 수행   
+   - gradle bootRun
+   
+   - notepad src/main/java/com/hybrid/mapper/DeptMapper.java 인터페이스 생성   
    
