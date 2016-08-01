@@ -4,6 +4,8 @@ import com.gluonhq.particle.application.ParticleApplication;
 import com.gluonhq.particle.state.StateManager;
 import com.gluonhq.particle.view.ViewManager;
 import java.util.ResourceBundle;
+
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -61,6 +63,12 @@ public class PrimaryController {
         	
         	url.setText(homeAddress);
         	engine.load(homeAddress);
+        	
+        });
+        
+        url.setOnAction(event -> {
+        	
+        	engine.load(url.getText());
         	
         });
         
