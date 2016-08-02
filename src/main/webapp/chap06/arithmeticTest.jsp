@@ -4,11 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>파라미터값 출력</title>
+<title>arithmeticTest.jsp</title>
 </head>
 <body>
-	
-	name 파라미터 값 = <%=request.getParameter("name").toUpperCase() %>
-	
+<h1>arithmeticTest.jsp</h1>
+<%
+	int num = 10;
+	num = num / 0;
+%>
 </body>
 </html>

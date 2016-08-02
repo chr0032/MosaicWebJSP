@@ -122,8 +122,13 @@
 		- >> spring boot + gluon start
 		- >> spring boot + gluon stop
 		- >> primaryView에 WebView 추가
-		 
-	   
+
+10. SiteMesh 설정
+
+	- mvnrepository.com >> search : sitemesh
+	- build.gradle dependencies 추가
+		- >> compile group: 'org.sitemesh', name: 'sitemesh', version: '3.0.1' 추가		 
+	- builder.addDecoratorPath("/deco", "/WEB-INF/deco/maindeco.jsp");   
    
       
    
