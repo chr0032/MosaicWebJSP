@@ -6,6 +6,7 @@
 <%@page import="org.springframework.web.context.WebApplicationContext"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>        
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,17 +17,22 @@
 
 <h1>Dept 테스트</h1>
 
+<!-- 1번,2번,3번  세가지 다 똑같은 것-->
+<%-- 1번 <c:if test="${sessionScope.LOGIN eq null}"> --%>
+<%-- 2번 <c:if test="${LOGIN eq null}"> --%>
+<!-- 3번 -->
+<c:if test="${empty LOGIN}">
+	<c:redirect url="/session/loginForm.jsp"/> 
+</c:if>
 <%
-
-	String login  = (String)session.getAttribute("LOGIN");
+// 	String login  = (String)session.getAttribute("LOGIN");
 		
-	if(login == null) {
+// 	if(login == null) {
 		
-		response.sendRedirect("/session/loginForm.jsp");
-		return;		
+// 		response.sendRedirect("/session/loginForm.jsp");
+// 		return;		
 		
-	}
-
+// 	}
 %>
 
 <%
