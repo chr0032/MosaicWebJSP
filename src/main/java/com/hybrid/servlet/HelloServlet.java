@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/HelloServlet")
+@WebServlet("/HelloServlet") //Mapping 처리
 public class HelloServlet extends HttpServlet {
    private static final long serialVersionUID = 1L;
        
@@ -30,7 +30,7 @@ public class HelloServlet extends HttpServlet {
     * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
     */
    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      System.out.println("##########");
+	   	System.out.println("##########");
         System.out.println("doGet()...");
         System.out.println("##########");
         
@@ -55,10 +55,10 @@ public class HelloServlet extends HttpServlet {
     * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
     */
    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      System.out.println("###########");
+	   	System.out.println("###########");
         System.out.println("doPost()...");
         System.out.println("###########");
-      doGet(request, response);
+        doGet(request, response);
    }
 
 }
